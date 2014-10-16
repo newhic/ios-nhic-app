@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D07938819E8B8B200F93CD7 /* PodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938719E8B8B200F93CD7 /* PodcastViewController.m */; };
+		5D07938B19E8B8E300F93CD7 /* PodcastDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */; };
 		5D1C629819E38A84003A5683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C629719E38A84003A5683 /* main.m */; };
 		5D1C629B19E38A84003A5683 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C629A19E38A84003A5683 /* AppDelegate.m */; };
-		5D1C629E19E38A84003A5683 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C629D19E38A84003A5683 /* ViewController.m */; };
 		5D1C62A119E38A84003A5683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C629F19E38A84003A5683 /* Main.storyboard */; };
 		5D1C62A319E38A84003A5683 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C62A219E38A84003A5683 /* Images.xcassets */; };
 		5D1C62A619E38A84003A5683 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C62A419E38A84003A5683 /* LaunchScreen.xib */; };
 		5D1C62B219E38A84003A5683 /* nhicappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C62B119E38A84003A5683 /* nhicappTests.m */; };
+		5D41883819ECEF1E001BA151 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */; };
+		5D48A95219E8F2DD001E683D /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D48A95119E8F2DD001E683D /* VideoViewController.m */; };
+		5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1619E78ACB00129D98 /* HomeViewController.m */; };
+		5DA4FD1A19E78B5D00129D98 /* AnnounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */; };
+		5DA4FD1D19E792C400129D98 /* AnnounceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +33,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D07938619E8B8B200F93CD7 /* PodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastViewController.h; sourceTree = "<group>"; };
+		5D07938719E8B8B200F93CD7 /* PodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastViewController.m; sourceTree = "<group>"; };
+		5D07938919E8B8E300F93CD7 /* PodcastDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastDetailViewController.h; sourceTree = "<group>"; };
+		5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastDetailViewController.m; sourceTree = "<group>"; };
 		5D1C629219E38A84003A5683 /* nhicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C629619E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C629719E38A84003A5683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D1C629919E38A84003A5683 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5D1C629A19E38A84003A5683 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5D1C629C19E38A84003A5683 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D1C629D19E38A84003A5683 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5D1C62A019E38A84003A5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D1C62A219E38A84003A5683 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D1C62A519E38A84003A5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5D1C62AB19E38A84003A5683 /* nhicappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nhicappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C62B019E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C62B119E38A84003A5683 /* nhicappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nhicappTests.m; sourceTree = "<group>"; };
+		5D41883619ECEF1E001BA151 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
+		5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
+		5D48A95019E8F2DD001E683D /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		5D48A95119E8F2DD001E683D /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		5DA4FD1519E78ACB00129D98 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5DA4FD1619E78ACB00129D98 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5DA4FD1819E78B5D00129D98 /* AnnounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnounceViewController.h; sourceTree = "<group>"; };
+		5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnounceViewController.m; sourceTree = "<group>"; };
+		5DA4FD1B19E792C400129D98 /* AnnounceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnounceDetailViewController.h; sourceTree = "<group>"; };
+		5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnounceDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +101,20 @@
 			children = (
 				5D1C629919E38A84003A5683 /* AppDelegate.h */,
 				5D1C629A19E38A84003A5683 /* AppDelegate.m */,
-				5D1C629C19E38A84003A5683 /* ViewController.h */,
-				5D1C629D19E38A84003A5683 /* ViewController.m */,
+				5DA4FD1519E78ACB00129D98 /* HomeViewController.h */,
+				5DA4FD1619E78ACB00129D98 /* HomeViewController.m */,
+				5D41883619ECEF1E001BA151 /* HomeDetailViewController.h */,
+				5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */,
+				5DA4FD1819E78B5D00129D98 /* AnnounceViewController.h */,
+				5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */,
+				5DA4FD1B19E792C400129D98 /* AnnounceDetailViewController.h */,
+				5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */,
+				5D07938619E8B8B200F93CD7 /* PodcastViewController.h */,
+				5D07938719E8B8B200F93CD7 /* PodcastViewController.m */,
+				5D07938919E8B8E300F93CD7 /* PodcastDetailViewController.h */,
+				5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */,
+				5D48A95019E8F2DD001E683D /* VideoViewController.h */,
+				5D48A95119E8F2DD001E683D /* VideoViewController.m */,
 				5D1C629F19E38A84003A5683 /* Main.storyboard */,
 				5D1C62A219E38A84003A5683 /* Images.xcassets */,
 				5D1C62A419E38A84003A5683 /* LaunchScreen.xib */,
@@ -219,9 +249,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1C629E19E38A84003A5683 /* ViewController.m in Sources */,
+				5D07938B19E8B8E300F93CD7 /* PodcastDetailViewController.m in Sources */,
 				5D1C629B19E38A84003A5683 /* AppDelegate.m in Sources */,
+				5DA4FD1A19E78B5D00129D98 /* AnnounceViewController.m in Sources */,
 				5D1C629819E38A84003A5683 /* main.m in Sources */,
+				5D07938819E8B8B200F93CD7 /* PodcastViewController.m in Sources */,
+				5DA4FD1D19E792C400129D98 /* AnnounceDetailViewController.m in Sources */,
+				5D41883819ECEF1E001BA151 /* HomeDetailViewController.m in Sources */,
+				5D48A95219E8F2DD001E683D /* VideoViewController.m in Sources */,
+				5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +381,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nhicapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -355,7 +393,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = nhicapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +454,7 @@
 				5D1C62B719E38A84003A5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D1C62B819E38A84003A5683 /* Build configuration list for PBXNativeTarget "nhicappTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +463,7 @@
 				5D1C62BA19E38A84003A5683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
