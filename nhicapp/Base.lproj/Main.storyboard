@@ -158,7 +158,7 @@
         <scene sceneID="h5o-j7-ryr">
             <objects>
                 <navigationController id="BXw-1e-92K" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Videos" id="RU0-0L-peQ"/>
+                    <tabBarItem key="tabBarItem" title="Videos" image="videoTab" id="RU0-0L-peQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7pI-Vc-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -231,7 +231,7 @@
         <scene sceneID="LJ4-q0-SGA">
             <objects>
                 <navigationController id="SkK-XQ-847" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Podcasts" id="eI9-hy-0Vw"/>
+                    <tabBarItem key="tabBarItem" title="Podcasts" image="podcastTab" id="eI9-hy-0Vw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rvi-OT-3NM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -248,7 +248,7 @@
         <scene sceneID="aCj-3K-kOy">
             <objects>
                 <navigationController id="kUN-Od-ZlW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Announcements" id="zR9-YQ-Bjr"/>
+                    <tabBarItem key="tabBarItem" title="Announcements" image="announceTab" id="zR9-YQ-Bjr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kbw-sw-TzI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -265,7 +265,7 @@
         <scene sceneID="CVx-jf-Wr8">
             <objects>
                 <navigationController id="IxK-Sf-eyu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="N5b-52-Anm"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homeTab" id="N5b-52-Anm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONU-TK-qvB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -290,9 +290,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5k-9G-Q8z">
-                                <rect key="frame" x="58" y="72" width="469" height="217"/>
-                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JPY-gH-JO2">
                                 <rect key="frame" x="58" y="297" width="469" height="230"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -313,6 +310,9 @@
                                     <outlet property="delegate" destination="did-G4-Q99" id="HX9-vr-DLb"/>
                                 </connections>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E5k-9G-Q8z">
+                                <rect key="frame" x="58" y="72" width="469" height="217"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -354,4 +354,10 @@
             <point key="canvasLocation" x="2501" y="-666"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="announceTab" width="32" height="32"/>
+        <image name="homeTab" width="32" height="32"/>
+        <image name="podcastTab" width="32" height="32"/>
+        <image name="videoTab" width="32" height="32"/>
+    </resources>
 </document>
