@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface PodcastViewController : UITableViewController <NSXMLParserDelegate, UISearchDisplayDelegate, UITableViewDelegate, UITableViewDataSource>
+@interface PodcastViewController : GAITrackedViewController <NSXMLParserDelegate, UISearchDisplayDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) IBOutlet UISearchDisplayController *searchController;

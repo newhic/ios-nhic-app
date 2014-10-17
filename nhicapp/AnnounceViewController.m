@@ -25,6 +25,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+      self.screenName = @"Announcements";
+    
     // Do any additional setup after loading the view.
     feeds = [[NSMutableArray alloc] init];
     NSLog(@"trying to load webpage");

@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface VideoViewController : UIViewController
+@interface VideoViewController : GAITrackedViewController
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
 @end

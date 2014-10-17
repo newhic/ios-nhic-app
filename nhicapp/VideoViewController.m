@@ -16,6 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.screenName = @"Videos";
     // Do any additional setup after loading the view.
     
     NSString *fullURL = @"https://www.youtube.com/user/NewHopeIC";

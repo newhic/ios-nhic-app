@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GAITrackedViewController.h"
 
-@interface AnnounceViewController : UITableViewController <NSXMLParserDelegate>
+@interface AnnounceViewController : GAITrackedViewController <NSXMLParserDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 
 @end

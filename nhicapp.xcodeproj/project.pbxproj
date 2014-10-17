@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		5D07938819E8B8B200F93CD7 /* PodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938719E8B8B200F93CD7 /* PodcastViewController.m */; };
 		5D07938B19E8B8E300F93CD7 /* PodcastDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */; };
+		5D13ECFE19F0B77800B8139F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13ECFD19F0B77800B8139F /* CoreData.framework */; };
+		5D13ED0019F0B78800B8139F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13ECFF19F0B78800B8139F /* SystemConfiguration.framework */; };
+		5D13ED0219F0B79400B8139F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13ED0119F0B79400B8139F /* libz.dylib */; };
+		5D13ED0519F0BE3800B8139F /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13ED0419F0BE3800B8139F /* libGoogleAnalyticsServices.a */; };
 		5D1C629819E38A84003A5683 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C629719E38A84003A5683 /* main.m */; };
 		5D1C629B19E38A84003A5683 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C629A19E38A84003A5683 /* AppDelegate.m */; };
 		5D1C62A119E38A84003A5683 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C629F19E38A84003A5683 /* Main.storyboard */; };
@@ -37,6 +41,20 @@
 		5D07938719E8B8B200F93CD7 /* PodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastViewController.m; sourceTree = "<group>"; };
 		5D07938919E8B8E300F93CD7 /* PodcastDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastDetailViewController.h; sourceTree = "<group>"; };
 		5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastDetailViewController.m; sourceTree = "<group>"; };
+		5D13ECF319F0B53700B8139F /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAI.h; path = GoogleAnalyticsV3/GAI.h; sourceTree = "<group>"; };
+		5D13ECF419F0B53700B8139F /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIDictionaryBuilder.h; path = GoogleAnalyticsV3/GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		5D13ECF519F0B53700B8139F /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceFields.h; path = GoogleAnalyticsV3/GAIEcommerceFields.h; sourceTree = "<group>"; };
+		5D13ECF619F0B53700B8139F /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProduct.h; path = GoogleAnalyticsV3/GAIEcommerceProduct.h; sourceTree = "<group>"; };
+		5D13ECF719F0B53700B8139F /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIEcommerceProductAction.h; path = GoogleAnalyticsV3/GAIEcommerceProductAction.h; sourceTree = "<group>"; };
+		5D13ECF819F0B53700B8139F /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIEcommercePromotion.h; path = GoogleAnalyticsV3/GAIEcommercePromotion.h; sourceTree = "<group>"; };
+		5D13ECF919F0B53700B8139F /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAIFields.h; path = GoogleAnalyticsV3/GAIFields.h; sourceTree = "<group>"; };
+		5D13ECFA19F0B53700B8139F /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAILogger.h; path = GoogleAnalyticsV3/GAILogger.h; sourceTree = "<group>"; };
+		5D13ECFB19F0B53700B8139F /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITrackedViewController.h; path = GoogleAnalyticsV3/GAITrackedViewController.h; sourceTree = "<group>"; };
+		5D13ECFC19F0B53700B8139F /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAITracker.h; path = GoogleAnalyticsV3/GAITracker.h; sourceTree = "<group>"; };
+		5D13ECFD19F0B77800B8139F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D13ECFF19F0B78800B8139F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5D13ED0119F0B79400B8139F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5D13ED0419F0BE3800B8139F /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
 		5D1C629219E38A84003A5683 /* nhicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C629619E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C629719E38A84003A5683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -65,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D13ED0219F0B79400B8139F /* libz.dylib in Frameworks */,
+				5D13ED0019F0B78800B8139F /* SystemConfiguration.framework in Frameworks */,
+				5D13ECFE19F0B77800B8139F /* CoreData.framework in Frameworks */,
+				5D13ED0519F0BE3800B8139F /* libGoogleAnalyticsServices.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,9 +100,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D13ED0319F0BD5D00B8139F /* GoogleAnalyticsV3 */ = {
+			isa = PBXGroup;
+			children = (
+				5D13ED0419F0BE3800B8139F /* libGoogleAnalyticsServices.a */,
+				5D13ECF319F0B53700B8139F /* GAI.h */,
+				5D13ECF419F0B53700B8139F /* GAIDictionaryBuilder.h */,
+				5D13ECF519F0B53700B8139F /* GAIEcommerceFields.h */,
+				5D13ECF619F0B53700B8139F /* GAIEcommerceProduct.h */,
+				5D13ECF719F0B53700B8139F /* GAIEcommerceProductAction.h */,
+				5D13ECF819F0B53700B8139F /* GAIEcommercePromotion.h */,
+				5D13ECF919F0B53700B8139F /* GAIFields.h */,
+				5D13ECFA19F0B53700B8139F /* GAILogger.h */,
+				5D13ECFB19F0B53700B8139F /* GAITrackedViewController.h */,
+				5D13ECFC19F0B53700B8139F /* GAITracker.h */,
+			);
+			name = GoogleAnalyticsV3;
+			sourceTree = "<group>";
+		};
 		5D1C628919E38A84003A5683 = {
 			isa = PBXGroup;
 			children = (
+				5D13ED0119F0B79400B8139F /* libz.dylib */,
+				5D13ECFF19F0B78800B8139F /* SystemConfiguration.framework */,
+				5D13ECFD19F0B77800B8139F /* CoreData.framework */,
 				5D1C629419E38A84003A5683 /* nhicapp */,
 				5D1C62AE19E38A84003A5683 /* nhicappTests */,
 				5D1C629319E38A84003A5683 /* Products */,
@@ -99,6 +142,7 @@
 		5D1C629419E38A84003A5683 /* nhicapp */ = {
 			isa = PBXGroup;
 			children = (
+				5D13ED0319F0BD5D00B8139F /* GoogleAnalyticsV3 */,
 				5D1C629919E38A84003A5683 /* AppDelegate.h */,
 				5D1C629A19E38A84003A5683 /* AppDelegate.m */,
 				5DA4FD1519E78ACB00129D98 /* HomeViewController.h */,
@@ -385,6 +429,10 @@
 				INFOPLIST_FILE = nhicapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/nhicapp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -397,6 +445,10 @@
 				INFOPLIST_FILE = nhicapp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/nhicapp",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
