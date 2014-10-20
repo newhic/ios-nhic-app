@@ -17,38 +17,98 @@
     NSMutableString *link;
     NSMutableString *author;
     NSString *element;
+    NSArray *pickerURL;
 }
 
 @end
 
 @implementation PodcastViewController
 
+- (void)loadData {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger selection;
+    NSURL *url;
+    NSString *urlString;
+    
+    selection = [defaults integerForKey:@"selection"];
+    
+    if(selection < 0 || selection > 4)
+        selection = 0;
+    
+    urlString = pickerURL[selection];
+    
+    
+    url = [NSURL URLWithString: [ urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+    
+    
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+    
+    
+    [self.tableView setTableHeaderView:self.searchDisplayController.searchBar];
+    
+    
+    self.searchResult = [[NSMutableArray alloc]init];
+    
+    
+    
+    [parser setDelegate:self];
+    [parser setShouldResolveExternalEntities:NO];
+    
+    
+    [parser parse];
+
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSInteger selection;
+    NSURL *url;
+    NSString *urlString;
+    
+    pickerURL = @[@"http://www.newhic.org/Media/Audio/rss.xml",
+                  @"http://www.newhic.org/Media/Thai/rss.xml",
+                  @"http://www.newhic.org/Media/Mandarin/rss.xml",
+                  @"http://www.newhic.org/Media/Japanese/rss.xml",
+                  @"http://www.newhic.org/Media/German/rss.xml"];
     
     self.screenName = @"Podcasts";
     // Do any additional setup after loading the view.
     
     feeds = [[NSMutableArray alloc] init];
-    NSURL *url = [NSURL URLWithString: @"http://www.newhic.org/Media/Audio/rss.xml"];
-        NSLog(@"Podcast Parsing 1");
-    parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     
-        NSLog(@"Podcast Parsing2");
+    selection = [defaults integerForKey:@"selection"];
+    
+    if(selection < 0 || selection > 4)
+        selection = 0;
+    
+    urlString = pickerURL[selection];
+    
+    
+    url = [NSURL URLWithString: [ urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
+    
+    
+    parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
+
     
    [self.tableView setTableHeaderView:self.searchDisplayController.searchBar];
     
-        NSLog(@"Podcast Parsing3");
+
     self.searchResult = [[NSMutableArray alloc]init];
     
-    
-        NSLog(@"Podcast Parsing");
+ 
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     
-    NSLog(@"Podcast Parsing");
+
     [parser parse];
     
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+
     
 }
 

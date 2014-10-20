@@ -19,6 +19,7 @@
 		5D1C62A319E38A84003A5683 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C62A219E38A84003A5683 /* Images.xcassets */; };
 		5D1C62A619E38A84003A5683 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D1C62A419E38A84003A5683 /* LaunchScreen.xib */; };
 		5D1C62B219E38A84003A5683 /* nhicappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C62B119E38A84003A5683 /* nhicappTests.m */; };
+		5D217F2519F40BCB00BBB841 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D217F2419F40BCB00BBB841 /* SettingsViewController.m */; };
 		5D41883819ECEF1E001BA151 /* HomeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */; };
 		5D48A95219E8F2DD001E683D /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D48A95119E8F2DD001E683D /* VideoViewController.m */; };
 		5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1619E78ACB00129D98 /* HomeViewController.m */; };
@@ -66,6 +67,8 @@
 		5D1C62AB19E38A84003A5683 /* nhicappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nhicappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C62B019E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C62B119E38A84003A5683 /* nhicappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nhicappTests.m; sourceTree = "<group>"; };
+		5D217F2319F40BCB00BBB841 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5D217F2419F40BCB00BBB841 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 		5D41883619ECEF1E001BA151 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
 		5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDetailViewController.m; sourceTree = "<group>"; };
 		5D48A95019E8F2DD001E683D /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */,
 				5D48A95019E8F2DD001E683D /* VideoViewController.h */,
 				5D48A95119E8F2DD001E683D /* VideoViewController.m */,
+				5D217F2319F40BCB00BBB841 /* SettingsViewController.h */,
+				5D217F2419F40BCB00BBB841 /* SettingsViewController.m */,
 				5D1C629F19E38A84003A5683 /* Main.storyboard */,
 				5D1C62A219E38A84003A5683 /* Images.xcassets */,
 				5D1C62A419E38A84003A5683 /* LaunchScreen.xib */,
@@ -300,6 +305,7 @@
 				5D07938819E8B8B200F93CD7 /* PodcastViewController.m in Sources */,
 				5DA4FD1D19E792C400129D98 /* AnnounceDetailViewController.m in Sources */,
 				5D41883819ECEF1E001BA151 /* HomeDetailViewController.m in Sources */,
+				5D217F2519F40BCB00BBB841 /* SettingsViewController.m in Sources */,
 				5D48A95219E8F2DD001E683D /* VideoViewController.m in Sources */,
 				5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */,
 			);
