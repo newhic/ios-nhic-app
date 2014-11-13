@@ -185,11 +185,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-4J-TIg">
+                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-4J-TIg">
                                 <rect key="frame" x="0.0" y="225" width="600" height="162"/>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-yx-y6w">
+                                <rect key="frame" x="228" y="179" width="145" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ndg-I1-KjZ" firstAttribute="top" secondItem="yjF-4J-TIg" secondAttribute="bottom" constant="164" id="4hr-bp-pgl"/>
+                            <constraint firstAttribute="centerX" secondItem="1QZ-yx-y6w" secondAttribute="centerX" constant="-0.5" id="YFf-CT-u2B"/>
+                            <constraint firstAttribute="centerX" secondItem="yjF-4J-TIg" secondAttribute="centerX" id="lni-n7-jY3"/>
+                            <constraint firstItem="yjF-4J-TIg" firstAttribute="top" secondItem="1QZ-yx-y6w" secondAttribute="bottom" constant="25" id="nHK-AN-QYv"/>
+                            <constraint firstItem="1QZ-yx-y6w" firstAttribute="top" secondItem="i5v-hH-fjb" secondAttribute="bottom" constant="115" id="sa5-gQ-LMj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="FpP-PN-sd5"/>
                     <connections>
