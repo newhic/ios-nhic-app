@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Jw-pi-1kA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2Jw-pi-1kA">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -21,7 +21,6 @@
                         <segue destination="kUN-Od-ZlW" kind="relationship" relationship="viewControllers" id="Ebr-6Q-p5Q"/>
                         <segue destination="SkK-XQ-847" kind="relationship" relationship="viewControllers" id="IlT-5W-Gfv"/>
                         <segue destination="BXw-1e-92K" kind="relationship" relationship="viewControllers" id="OQQ-qX-68c"/>
-                        <segue destination="QPG-cf-wOH" kind="relationship" relationship="viewControllers" id="Sx1-ur-XNh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAD-Wa-dMd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,63 +154,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uai-vv-gUs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1886" y="1920"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="5ur-yy-DPa">
-            <objects>
-                <navigationController id="QPG-cf-wOH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="settingsTab" id="mEl-Nm-mzL"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Arr-1U-OHB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="NaY-E2-nt5" kind="relationship" relationship="rootViewController" id="W4v-6e-0Qs"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8Xg-Ly-S4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1131" y="2728"/>
-        </scene>
-        <!--Settings-->
-        <scene sceneID="kxg-Yr-aN6">
-            <objects>
-                <viewController id="NaY-E2-nt5" customClass="SettingsViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="i5v-hH-fjb"/>
-                        <viewControllerLayoutGuide type="bottom" id="ndg-I1-KjZ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z5X-3M-gZO">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yjF-4J-TIg">
-                                <rect key="frame" x="0.0" y="225" width="600" height="162"/>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Podcast Language" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1QZ-yx-y6w">
-                                <rect key="frame" x="228" y="179" width="145" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ndg-I1-KjZ" firstAttribute="top" secondItem="yjF-4J-TIg" secondAttribute="bottom" constant="164" id="4hr-bp-pgl"/>
-                            <constraint firstAttribute="centerX" secondItem="1QZ-yx-y6w" secondAttribute="centerX" constant="-0.5" id="YFf-CT-u2B"/>
-                            <constraint firstAttribute="centerX" secondItem="yjF-4J-TIg" secondAttribute="centerX" id="lni-n7-jY3"/>
-                            <constraint firstItem="yjF-4J-TIg" firstAttribute="top" secondItem="1QZ-yx-y6w" secondAttribute="bottom" constant="25" id="nHK-AN-QYv"/>
-                            <constraint firstItem="1QZ-yx-y6w" firstAttribute="top" secondItem="i5v-hH-fjb" secondAttribute="bottom" constant="115" id="sa5-gQ-LMj"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Settings" id="FpP-PN-sd5"/>
-                    <connections>
-                        <outlet property="picker" destination="yjF-4J-TIg" id="qsD-R4-QTT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="CgT-Iq-YlV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1947" y="2728"/>
         </scene>
         <!--Videos-->
         <scene sceneID="h5o-j7-ryr">
@@ -484,7 +426,6 @@
         <image name="announceTab" width="32" height="32"/>
         <image name="homeTab" width="32" height="32"/>
         <image name="podcastTab" width="32" height="32"/>
-        <image name="settingsTab" width="32" height="32"/>
         <image name="videoTab" width="32" height="32"/>
     </resources>
 </document>
