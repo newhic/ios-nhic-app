@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		049430621A60400200BFCC9B /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 049430611A60400200BFCC9B /* Settings.bundle */; };
 		5D07938819E8B8B200F93CD7 /* PodcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938719E8B8B200F93CD7 /* PodcastViewController.m */; };
 		5D07938B19E8B8E300F93CD7 /* PodcastDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D07938A19E8B8E300F93CD7 /* PodcastDetailViewController.m */; };
 		5D13ECFE19F0B77800B8139F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D13ECFD19F0B77800B8139F /* CoreData.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		049430611A60400200BFCC9B /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		5D07938619E8B8B200F93CD7 /* PodcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastViewController.h; sourceTree = "<group>"; };
 		5D07938719E8B8B200F93CD7 /* PodcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PodcastViewController.m; sourceTree = "<group>"; };
 		5D07938919E8B8E300F93CD7 /* PodcastDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PodcastDetailViewController.h; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				5D1C62A219E38A84003A5683 /* Images.xcassets */,
 				5D1C62A419E38A84003A5683 /* LaunchScreen.xib */,
 				5D1C629519E38A84003A5683 /* Supporting Files */,
+				049430611A60400200BFCC9B /* Settings.bundle */,
 			);
 			path = nhicapp;
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				049430621A60400200BFCC9B /* Settings.bundle in Resources */,
 				5D1C62A119E38A84003A5683 /* Main.storyboard in Resources */,
 				5D1C62A619E38A84003A5683 /* LaunchScreen.xib in Resources */,
 				5D1C62A319E38A84003A5683 /* Images.xcassets in Resources */,
