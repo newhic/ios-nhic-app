@@ -43,7 +43,7 @@
     
     feeds = [[NSMutableArray alloc] init];
     
-    selection = [defaults integerForKey:@"selection"];
+    selection = [defaults integerForKey:@"pdcstLang_pref"];
     
     if(selection < 0 || selection > 4)
         selection = 0;

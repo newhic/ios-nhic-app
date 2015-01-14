@@ -30,6 +30,12 @@
     
     // Initialize tracker. This is currently the debug tracking id.
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-51856239-1"];
+    
+    // Register the preference defaults early.
+    NSDictionary *appDefaults = [NSDictionary
+                                 dictionaryWithObjectsAndKeys:@"0", @"pdcstLang_pref", nil];
+    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+    
 
     return YES;
 }
