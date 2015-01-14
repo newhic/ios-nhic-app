@@ -24,41 +24,6 @@
 
 @implementation PodcastViewController
 
-- (void)loadData {
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSInteger selection;
-    NSURL *url;
-    NSString *urlString;
-    
-    selection = [defaults integerForKey:@"selection"];
-    
-    if(selection < 0 || selection > 4)
-        selection = 0;
-    
-    urlString = pickerURL[selection];
-    
-    
-    url = [NSURL URLWithString: [ urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding]];
-    
-    
-    parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-    
-    
-    [self.tableView setTableHeaderView:self.searchDisplayController.searchBar];
-    
-    
-    self.searchResult = [[NSMutableArray alloc]init];
-    
-    
-    
-    [parser setDelegate:self];
-    [parser setShouldResolveExternalEntities:NO];
-    
-    
-    [parser parse];
-
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
