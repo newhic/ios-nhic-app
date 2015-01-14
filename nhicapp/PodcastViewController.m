@@ -19,14 +19,13 @@
     NSString *element;
     NSArray *pickerURL;
 }
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 
 @end
 
 @implementation PodcastViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
+-(void)loadPodcastData {
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSInteger selection;
     NSURL *url;
@@ -38,7 +37,6 @@
                   @"http://www.newhic.org/Media/Japanese/rss.xml",
                   @"http://www.newhic.org/Media/German/rss.xml"];
     
-    self.screenName = @"Podcasts";
     // Do any additional setup after loading the view.
     
     feeds = [[NSMutableArray alloc] init];
@@ -55,21 +53,31 @@
     
     
     parser = [[NSXMLParser alloc] initWithContentsOfURL:url];
-
     
-   [self.tableView setTableHeaderView:self.searchDisplayController.searchBar];
     
-
+    [self.tableView setTableHeaderView:self.searchDisplayController.searchBar];
+    
+    
     self.searchResult = [[NSMutableArray alloc]init];
     
- 
+    
     [parser setDelegate:self];
     [parser setShouldResolveExternalEntities:NO];
     
-
+    
     [parser parse];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
     
+    self.screenName = @"Podcasts";
     
+    //Display an activity indicator while loading the RSS feed
+    self.indicator.center = CGPointMake(self.view.center.x, self.view.center.y-64);
+    [self.view addSubview:self.indicator];
+    [self.indicator startAnimating];
+    [self performSelector:@selector(loadPodcastData)withObject:nil afterDelay:0];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -198,6 +206,7 @@
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
     [self.tableView reloadData];
+    [self.indicator stopAnimating];
 }
 
 

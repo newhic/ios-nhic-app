@@ -18,15 +18,13 @@
     NSString *element;
 }
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
+
 @end
 
 @implementation AnnounceViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-      self.screenName = @"Announcements";
-    
+-(void)loadAnnounceData{
     // Do any additional setup after loading the view.
     feeds = [[NSMutableArray alloc] init];
     NSLog(@"trying to load webpage");
@@ -38,6 +36,19 @@
     [parser parse];
     
     NSLog(@"resulting count is: %d", (int)feeds.count);
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.screenName = @"Announcements";
+    
+    //Display an activity indicator while loading the RSS feed
+    self.indicator.center = CGPointMake(self.view.center.x, self.view.center.y-64);
+    [self.view addSubview:self.indicator];
+    [self.indicator startAnimating];
+    [self performSelector:@selector(loadAnnounceData)withObject:nil afterDelay:0];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -99,6 +110,7 @@
 
 -(void)parserDidEndDocument:(NSXMLParser *)parser {
     [self.tableView reloadData];
+    [self.indicator stopAnimating];
 }
 
 

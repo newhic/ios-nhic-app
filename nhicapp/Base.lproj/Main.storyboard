@@ -53,10 +53,15 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Announcements" id="HfE-3Z-4nJ"/>
                     <connections>
+                        <outlet property="indicator" destination="V0a-9d-Hl8" id="Rse-c6-q0j"/>
                         <outlet property="tableView" destination="LRY-Kz-eTL" id="9Un-uD-GIy"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qKt-Pw-Kyj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="V0a-9d-Hl8">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </activityIndicatorView>
             </objects>
             <point key="canvasLocation" x="1902" y="281"/>
         </scene>
@@ -108,6 +113,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Podcasts" id="b5B-Rl-WfN"/>
                     <connections>
+                        <outlet property="indicator" destination="O3l-XP-PKa" id="rI8-aQ-Jdq"/>
                         <outlet property="searchBar" destination="zat-lx-yA4" id="WpR-eo-My1"/>
                         <outlet property="searchController" destination="1XS-BM-dSh" id="uxu-b4-lMQ"/>
                         <outlet property="searchDisplayController" destination="1XS-BM-dSh" id="tpe-Rx-YBC"/>
@@ -124,6 +130,11 @@
                         <outlet property="searchResultsDelegate" destination="LUv-UJ-hBi" id="OGe-6g-yO1"/>
                     </connections>
                 </searchDisplayController>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="center" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="O3l-XP-PKa">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="color" cocoaTouchSystemColor="darkTextColor"/>
+                </activityIndicatorView>
             </objects>
             <point key="canvasLocation" x="1914" y="1114"/>
         </scene>
