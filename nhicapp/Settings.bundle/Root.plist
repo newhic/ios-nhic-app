@@ -42,7 +42,15 @@
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
-			<string>Acknowledgements</string>
+			<string>Other</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>About</string>
+			<key>File</key>
+			<string>About</string>
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -50,7 +58,23 @@
 			<key>Title</key>
 			<string>Acknowledgements</string>
 			<key>File</key>
-			<string>Acknowledgements</string>
+			<string>Acknl</string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Privacy Policy</string>
+			<key>Key</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSChildPaneSpecifier</string>
+			<key>Title</key>
+			<string>Policy</string>
+			<key>File</key>
+			<string>Policy</string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

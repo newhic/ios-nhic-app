@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Apps4Christ is a development team aimed at creating apps for church communities. As software engineers by trade, they hope to use their skills for the glory of God&apos;s kingdom. The NHIC App was birthed when the Ohana caregroups started their weekly sermon listening. While it was much easier for iTunes users to get the podcasts, the rest had to rely on dropbox. Uploading and downloading the sermons proved to be a complicated process and a new way of doing things was needed. The NHIC App started off as a simple podcast application but slowly morphed into a fully featured app. As it is an ongoing project, please feel free to report bugs by emailing nhicdev@gmail.com. Please include your phone model in the report.</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Disclaimer</string>
+</dict>
+</plist>

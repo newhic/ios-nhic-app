@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Title</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+			<key>Title</key>
+			<string>Copyright 2015 New Hope International Church. All rights reserved. This software may not be copied, reproduced, transmitted, reduced to any electronic medium or machine readable format without prior consent in writing from New Hope International Church or AppsForChrist. Users may not modify, translate, or decompile into its constituent source code. DISCLAIMER: User acknowledges that the software may not be free from defects and may not satisfy all user needs. In no event will New Hope International Church or AppsForChrist be held liable for direct, indirect, incidental or consequential damages. These damages cover defects on the device, or financial loss.</string>
+		</dict>
+	</array>
+	<key>StringsTable</key>
+	<string>Disclaimer</string>
+</dict>
+</plist>
