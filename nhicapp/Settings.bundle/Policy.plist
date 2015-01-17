@@ -12,7 +12,7 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSMultiValueSpecifier</string>
+			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string></string>
 		</dict>
