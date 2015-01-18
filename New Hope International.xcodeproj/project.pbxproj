@@ -474,7 +474,7 @@
 				INFOPLIST_FILE = nhicappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "New Hope InternationalTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nhicapp.app/nhicapp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/New Hope International.app/New Hope International";
 			};
 			name = Debug;
 		};
@@ -489,7 +489,7 @@
 				INFOPLIST_FILE = nhicappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "New Hope InternationalTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nhicapp.app/nhicapp";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/New Hope International.app/New Hope International";
 			};
 			name = Release;
 		};
