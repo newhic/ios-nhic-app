@@ -57,7 +57,7 @@
 		5D13ECFF19F0B78800B8139F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5D13ED0119F0B79400B8139F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		5D13ED0419F0BE3800B8139F /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
-		5D1C629219E38A84003A5683 /* nhicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nhicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1C629219E38A84003A5683 /* New Hope International.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "New Hope International.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C629619E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C629719E38A84003A5683 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5D1C629919E38A84003A5683 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -65,7 +65,7 @@
 		5D1C62A019E38A84003A5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D1C62A219E38A84003A5683 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D1C62A519E38A84003A5683 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		5D1C62AB19E38A84003A5683 /* nhicappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nhicappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D1C62AB19E38A84003A5683 /* New Hope InternationalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "New Hope InternationalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D1C62B019E38A84003A5683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D1C62B119E38A84003A5683 /* nhicappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = nhicappTests.m; sourceTree = "<group>"; };
 		5D41883619ECEF1E001BA151 /* HomeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDetailViewController.h; sourceTree = "<group>"; };
@@ -135,8 +135,8 @@
 		5D1C629319E38A84003A5683 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D1C629219E38A84003A5683 /* nhicapp.app */,
-				5D1C62AB19E38A84003A5683 /* nhicappTests.xctest */,
+				5D1C629219E38A84003A5683 /* New Hope International.app */,
+				5D1C62AB19E38A84003A5683 /* New Hope InternationalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D1C629119E38A84003A5683 /* nhicapp */ = {
+		5D1C629119E38A84003A5683 /* New Hope International */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D1C62B519E38A84003A5683 /* Build configuration list for PBXNativeTarget "nhicapp" */;
+			buildConfigurationList = 5D1C62B519E38A84003A5683 /* Build configuration list for PBXNativeTarget "New Hope International" */;
 			buildPhases = (
 				5D1C628E19E38A84003A5683 /* Sources */,
 				5D1C628F19E38A84003A5683 /* Frameworks */,
@@ -211,14 +211,14 @@
 			);
 			dependencies = (
 			);
-			name = nhicapp;
+			name = "New Hope International";
 			productName = nhicapp;
-			productReference = 5D1C629219E38A84003A5683 /* nhicapp.app */;
+			productReference = 5D1C629219E38A84003A5683 /* New Hope International.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D1C62AA19E38A84003A5683 /* nhicappTests */ = {
+		5D1C62AA19E38A84003A5683 /* New Hope InternationalTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D1C62B819E38A84003A5683 /* Build configuration list for PBXNativeTarget "nhicappTests" */;
+			buildConfigurationList = 5D1C62B819E38A84003A5683 /* Build configuration list for PBXNativeTarget "New Hope InternationalTests" */;
 			buildPhases = (
 				5D1C62A719E38A84003A5683 /* Sources */,
 				5D1C62A819E38A84003A5683 /* Frameworks */,
@@ -229,9 +229,9 @@
 			dependencies = (
 				5D1C62AD19E38A84003A5683 /* PBXTargetDependency */,
 			);
-			name = nhicappTests;
+			name = "New Hope InternationalTests";
 			productName = nhicappTests;
-			productReference = 5D1C62AB19E38A84003A5683 /* nhicappTests.xctest */;
+			productReference = 5D1C62AB19E38A84003A5683 /* New Hope InternationalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +252,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5D1C628D19E38A84003A5683 /* Build configuration list for PBXProject "nhicapp" */;
+			buildConfigurationList = 5D1C628D19E38A84003A5683 /* Build configuration list for PBXProject "New Hope International" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -265,8 +265,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D1C629119E38A84003A5683 /* nhicapp */,
-				5D1C62AA19E38A84003A5683 /* nhicappTests */,
+				5D1C629119E38A84003A5683 /* New Hope International */,
+				5D1C62AA19E38A84003A5683 /* New Hope InternationalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -322,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		5D1C62AD19E38A84003A5683 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D1C629119E38A84003A5683 /* nhicapp */;
+			target = 5D1C629119E38A84003A5683 /* New Hope International */;
 			targetProxy = 5D1C62AC19E38A84003A5683 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -438,7 +438,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/nhicapp",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "New Hope International";
 			};
 			name = Debug;
 		};
@@ -455,7 +455,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/nhicapp",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "New Hope International";
 			};
 			name = Release;
 		};
@@ -473,7 +473,7 @@
 				);
 				INFOPLIST_FILE = nhicappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "New Hope InternationalTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nhicapp.app/nhicapp";
 			};
 			name = Debug;
@@ -488,7 +488,7 @@
 				);
 				INFOPLIST_FILE = nhicappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "New Hope InternationalTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nhicapp.app/nhicapp";
 			};
 			name = Release;
@@ -496,7 +496,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D1C628D19E38A84003A5683 /* Build configuration list for PBXProject "nhicapp" */ = {
+		5D1C628D19E38A84003A5683 /* Build configuration list for PBXProject "New Hope International" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D1C62B319E38A84003A5683 /* Debug */,
@@ -505,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D1C62B519E38A84003A5683 /* Build configuration list for PBXNativeTarget "nhicapp" */ = {
+		5D1C62B519E38A84003A5683 /* Build configuration list for PBXNativeTarget "New Hope International" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D1C62B619E38A84003A5683 /* Debug */,
@@ -514,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D1C62B819E38A84003A5683 /* Build configuration list for PBXNativeTarget "nhicappTests" */ = {
+		5D1C62B819E38A84003A5683 /* Build configuration list for PBXNativeTarget "New Hope InternationalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5D1C62B919E38A84003A5683 /* Debug */,
