@@ -29,6 +29,12 @@
              @"http://www.newhic.org/about/statement-of-faith/", @"http://www.newhic.org/about/core-values/", nil];
 }
 
+//Debug routine that lets me see the size classes. 
+-(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection
+             withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    NSLog(@"Trait collection = %@", newCollection);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
