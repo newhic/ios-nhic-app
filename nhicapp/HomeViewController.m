@@ -29,6 +29,30 @@
              @"http://www.newhic.org/about/statement-of-faith/", @"http://www.newhic.org/about/core-values/", nil];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+-(BOOL)shouldAutorotate
+{
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        return YES;
+    
+    return NO;
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    
+    return UIInterfaceOrientationMaskPortrait;
+}
+
 //Debug routine that lets me see the size classes. 
 -(void)willTransitionToTraitCollection:(UITraitCollection *)newCollection
              withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {

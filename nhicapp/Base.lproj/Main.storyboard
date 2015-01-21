@@ -7,10 +7,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--App Tab Bar Controller-->
         <scene sceneID="Ahm-Lt-qVg">
             <objects>
-                <tabBarController id="2Jw-pi-1kA" sceneMemberID="viewController">
+                <tabBarController id="2Jw-pi-1kA" customClass="AppTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="bSW-lp-e4p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -170,7 +170,7 @@
         <!--Videos-->
         <scene sceneID="h5o-j7-ryr">
             <objects>
-                <navigationController id="BXw-1e-92K" sceneMemberID="viewController">
+                <navigationController id="BXw-1e-92K" customClass="AppNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Videos" image="videoTab" id="RU0-0L-peQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="7pI-Vc-MTg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -243,7 +243,7 @@
         <!--Podcasts-->
         <scene sceneID="LJ4-q0-SGA">
             <objects>
-                <navigationController id="SkK-XQ-847" sceneMemberID="viewController">
+                <navigationController id="SkK-XQ-847" customClass="AppNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Podcasts" image="podcastTab" id="eI9-hy-0Vw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rvi-OT-3NM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -260,7 +260,7 @@
         <!--Announcements-->
         <scene sceneID="aCj-3K-kOy">
             <objects>
-                <navigationController id="kUN-Od-ZlW" sceneMemberID="viewController">
+                <navigationController id="kUN-Od-ZlW" customClass="AppNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Announcements" image="announceTab" id="zR9-YQ-Bjr"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kbw-sw-TzI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -277,7 +277,7 @@
         <!--Home-->
         <scene sceneID="CVx-jf-Wr8">
             <objects>
-                <navigationController id="IxK-Sf-eyu" sceneMemberID="viewController">
+                <navigationController id="IxK-Sf-eyu" customClass="AppNavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="homeTab" id="N5b-52-Anm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ONU-TK-qvB">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -408,10 +408,6 @@
                                 <exclude reference="t5h-Jh-vdu"/>
                                 <exclude reference="u3L-AM-ehe"/>
                                 <exclude reference="uz2-XU-gAX"/>
-                                <exclude reference="MgC-fT-QN6"/>
-                                <exclude reference="SQo-D3-Jf5"/>
-                                <exclude reference="fbb-tF-yLW"/>
-                                <exclude reference="tky-gG-x3D"/>
                                 <exclude reference="3MG-ov-c7j"/>
                                 <exclude reference="GwD-a7-67B"/>
                                 <exclude reference="LYc-70-li8"/>
@@ -421,6 +417,10 @@
                                 <exclude reference="sMs-bF-ZQN"/>
                                 <exclude reference="tmj-d7-qZd"/>
                                 <exclude reference="trB-PU-bFp"/>
+                                <exclude reference="MgC-fT-QN6"/>
+                                <exclude reference="SQo-D3-Jf5"/>
+                                <exclude reference="fbb-tF-yLW"/>
+                                <exclude reference="tky-gG-x3D"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -429,9 +429,9 @@
                                 <include reference="kQv-s5-2Iz"/>
                                 <include reference="t5h-Jh-vdu"/>
                                 <include reference="u3L-AM-ehe"/>
-                                <include reference="tky-gG-x3D"/>
                                 <include reference="W9t-h4-6zd"/>
                                 <include reference="aWa-PR-4Jc"/>
+                                <include reference="tky-gG-x3D"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -445,10 +445,6 @@
                                 <exclude reference="u3L-AM-ehe"/>
                                 <include reference="uz2-XU-gAX"/>
                                 <exclude reference="x56-oY-2h7"/>
-                                <include reference="SQo-D3-Jf5"/>
-                                <include reference="fbb-tF-yLW"/>
-                                <exclude reference="tky-gG-x3D"/>
-                                <exclude reference="wGL-ul-E2Y"/>
                                 <include reference="3MG-ov-c7j"/>
                                 <exclude reference="59J-bR-xTs"/>
                                 <exclude reference="F7b-G9-rFY"/>
@@ -458,6 +454,10 @@
                                 <include reference="sMs-bF-ZQN"/>
                                 <include reference="trB-PU-bFp"/>
                                 <exclude reference="uzf-0e-hJP"/>
+                                <include reference="SQo-D3-Jf5"/>
+                                <include reference="fbb-tF-yLW"/>
+                                <exclude reference="tky-gG-x3D"/>
+                                <exclude reference="wGL-ul-E2Y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -468,14 +468,14 @@
                                 <exclude reference="pM3-9d-o3o"/>
                                 <include reference="sct-WD-bRa"/>
                                 <exclude reference="x56-oY-2h7"/>
-                                <include reference="MgC-fT-QN6"/>
-                                <exclude reference="wGL-ul-E2Y"/>
                                 <exclude reference="59J-bR-xTs"/>
                                 <exclude reference="F7b-G9-rFY"/>
                                 <include reference="GwD-a7-67B"/>
                                 <include reference="Tu3-nu-IAc"/>
                                 <include reference="tmj-d7-qZd"/>
                                 <exclude reference="uzf-0e-hJP"/>
+                                <include reference="MgC-fT-QN6"/>
+                                <exclude reference="wGL-ul-E2Y"/>
                             </mask>
                         </variation>
                     </view>
