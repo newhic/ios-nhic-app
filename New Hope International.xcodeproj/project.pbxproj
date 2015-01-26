@@ -439,6 +439,7 @@
 					"$(PROJECT_DIR)/nhicapp",
 				);
 				PRODUCT_NAME = "New Hope International";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -456,6 +457,7 @@
 					"$(PROJECT_DIR)/nhicapp",
 				);
 				PRODUCT_NAME = "New Hope International";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
