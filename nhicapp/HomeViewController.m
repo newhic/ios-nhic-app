@@ -25,7 +25,7 @@
     self.screenName = @"Home";
     
     homeAbout = [NSArray arrayWithObjects:@"Our Vision", @"Statement of Faith", @"Core Values", nil];
-    links = [NSArray arrayWithObjects:@"http://www.newhic.org/about/vision-of-our-church/",
+    links = [NSArray arrayWithObjects:@"http://www.newhic.org/about/our-vision/",
              @"http://www.newhic.org/about/statement-of-faith/", @"http://www.newhic.org/about/core-values/", nil];
 }
 
