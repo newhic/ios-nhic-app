@@ -15,10 +15,32 @@
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Initialize Google Analytics for tracking purposes
+-(void)InitNavigationBarColors
+{
+    NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:[UIFont
+                                                                           fontWithName:@"Helvetica" size:21], NSFontAttributeName,
+                                                                           [UIColor whiteColor],
+                                                                           NSForegroundColorAttributeName,
+                                                                           nil];
     
+    // Change the navigation bar title color to white
+    [[UINavigationBar appearance] setTitleTextAttributes:attributes];
+    
+    // Change the navigation bar color to NHIC blue
+    [[UINavigationBar appearance] setBarTintColor:UIColorFromRGB(0x5d9aad)];
+    
+    // Change the back button color to white to be easier seen which NHIC blue
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+}
+
+-(void)InitTabBarColors
+{
+    // Change the tab bar selection color to NHIC orange
+    [[UITabBar appearance] setTintColor:UIColorFromRGB(0xffa500)];
+}
+
+-(void)InitGoogleAnalytics
+{
     // Optional: automatically send uncaught exceptions to Google Analytics.
     [GAI sharedInstance].trackUncaughtExceptions = YES;
     
@@ -30,13 +52,25 @@
     
     // Initialize tracker. This is currently the debug tracking id.
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-51856239-1"];
-    
-    // Register the preference defaults early.
+}
+
+-(void)RegisterPreferenceDefaults
+{
     NSDictionary *appDefaults = [NSDictionary
                                  dictionaryWithObjectsAndKeys:@"0", @"pdcstLang_pref", nil];
     [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
-    
+}
 
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    [self InitNavigationBarColors];
+    
+    [self InitTabBarColors];
+        
+    [self InitGoogleAnalytics];
+
+    [self RegisterPreferenceDefaults];
+    
     return YES;
 }
 

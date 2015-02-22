@@ -291,7 +291,7 @@
             </objects>
             <point key="canvasLocation" x="1054" y="-666"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="bFJ-Ah-OE3">
             <objects>
                 <viewController id="did-G4-Q99" customClass="HomeViewController" sceneMemberID="viewController">
@@ -479,7 +479,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="656-uR-sMa"/>
+                    <navigationItem key="navigationItem" title="Home" id="656-uR-sMa"/>
                     <connections>
                         <outlet property="imgView" destination="E5k-9G-Q8z" id="EaF-eG-jGv"/>
                         <outlet property="tableView" destination="JPY-gH-JO2" id="Hc7-I4-Bcz"/>
