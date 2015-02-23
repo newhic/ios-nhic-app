@@ -171,7 +171,7 @@
     
     element = elementName;
     
-    NSLog(@"Starting parser");
+    NSLog(@"Starting Podcast parser");
     
     if([element isEqualToString:@"item"]) {
         
@@ -189,7 +189,6 @@
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-    NSLog(@"found characters");
     if ([element isEqualToString:@"title"]) {
         [title appendString:string];
     }else if ([element isEqualToString:@"url"]) {

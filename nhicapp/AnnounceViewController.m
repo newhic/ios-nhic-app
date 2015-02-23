@@ -72,7 +72,6 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    NSLog(@"number of sections is 1");
     return 1;
 }
 
@@ -93,7 +92,7 @@
     
     element = elementName;
     
-    NSLog(@"Starting parser");
+    NSLog(@"Starting Announcement parser");
     
     if([element isEqualToString:@"item"]) {
         

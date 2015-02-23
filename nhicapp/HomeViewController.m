@@ -95,8 +95,6 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     NSString *string;
     
-    NSLog(@"hello");
-    
     if ([[segue identifier] isEqualToString:@"showHomeDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         string = links[indexPath.row];
