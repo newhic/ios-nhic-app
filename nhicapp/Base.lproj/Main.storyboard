@@ -224,16 +224,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Adk-6K-Mbt">
-                                <rect key="frame" x="0.0" y="-20" width="600" height="563"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yGE-LS-My5">
+                                <rect key="frame" x="16" y="153" width="568" height="372"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
-                            </webView>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwO-Kg-Z43">
+                                <rect key="frame" x="16" y="84" width="568" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yGE-LS-My5" firstAttribute="trailing" secondItem="Rdt-IQ-Cds" secondAttribute="trailingMargin" id="3Ak-Xz-glc"/>
+                            <constraint firstItem="OzZ-4e-tmD" firstAttribute="top" secondItem="yGE-LS-My5" secondAttribute="bottom" constant="26" id="EQV-b6-iWO"/>
+                            <constraint firstItem="yGE-LS-My5" firstAttribute="top" secondItem="pqo-6F-OgY" secondAttribute="bottom" constant="128" id="R8L-Py-aPk"/>
+                            <constraint firstItem="YwO-Kg-Z43" firstAttribute="trailing" secondItem="Rdt-IQ-Cds" secondAttribute="trailingMargin" id="R9R-2Y-Zaz"/>
+                            <constraint firstItem="yGE-LS-My5" firstAttribute="top" secondItem="YwO-Kg-Z43" secondAttribute="bottom" constant="19" id="Uj6-N7-fVa"/>
+                            <constraint firstItem="YwO-Kg-Z43" firstAttribute="leading" secondItem="Rdt-IQ-Cds" secondAttribute="leadingMargin" id="VKW-gD-XEe"/>
+                            <constraint firstItem="yGE-LS-My5" firstAttribute="leading" secondItem="Rdt-IQ-Cds" secondAttribute="leadingMargin" id="kGn-aE-waZ"/>
+                            <constraint firstItem="YwO-Kg-Z43" firstAttribute="top" secondItem="pqo-6F-OgY" secondAttribute="bottom" constant="20" id="t4C-NA-D3C"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="Adk-6K-Mbt" id="pxO-EC-taV"/>
+                        <outlet property="labelView" destination="YwO-Kg-Z43" id="thF-8y-Yre"/>
+                        <outlet property="textView" destination="yGE-LS-My5" id="m5U-Ow-BaB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XHW-aJ-6bk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -549,15 +568,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-8p-fJw">
-                                <rect key="frame" x="0.0" y="-20" width="600" height="600"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="x7D-bZ-dq0">
+                                <rect key="frame" x="16" y="64" width="568" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="leading" secondItem="tBy-e4-7cR" secondAttribute="leadingMargin" id="Ghq-PP-EOt"/>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="trailing" secondItem="tBy-e4-7cR" secondAttribute="trailingMargin" id="VLE-Xs-0bV"/>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="top" secondItem="fer-ps-qAG" secondAttribute="bottom" id="dhV-ni-abo"/>
+                            <constraint firstItem="ypL-i2-c9j" firstAttribute="top" secondItem="x7D-bZ-dq0" secondAttribute="bottom" constant="24" id="eaD-Fb-9m5"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="webView" destination="5c1-8p-fJw" id="YnF-GA-To5"/>
+                        <outlet property="textView" destination="x7D-bZ-dq0" id="pMO-6V-1XW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kK-Vs-cyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>

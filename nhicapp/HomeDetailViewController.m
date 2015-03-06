@@ -7,6 +7,7 @@
 //
 
 #import "HomeDetailViewController.h"
+#import "TFHpple.h"
 
 @interface HomeDetailViewController ()
 
@@ -17,24 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    NSString *website;
-    NSURL *myUrl;
-    
-    website = self.url;
-    website = [website stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    website = [website stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-    
-    NSLog(@"website url is: %@", website);
-    
-    myUrl = [NSURL URLWithString:website];
-    
-    NSLog(@"detail view link is: %@", myUrl);
-    
-    NSURLRequest *request = [NSURLRequest requestWithURL:myUrl];
-    
-    [self.webView loadRequest:request];
 
+    [self loadContent];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -57,14 +42,59 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)loadContent
+{
+    NSString *website;
+    NSURL *url;
+    NSString *string = @"";
+    
+    website = self.url;
+    website = [website stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    website = [website stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    
+    NSLog(@"website url is: %@", website);
+    
+    url = [NSURL URLWithString:website];
+    
+    //Returns a data object containing the data from the location specified by a given URL.
+    NSData *htmlData = [NSData dataWithContentsOfURL:url];
+    
+    //Gives the Hpple parser the NSData file which contains the HTML data
+    TFHpple *htmlParser = [TFHpple hppleWithHTMLData:htmlData];
+    
+    if (htmlData)   //check that htmlData contains data
+    {
+        //Enter your Xpath query here to obtain the data you want from the webpage
+        //more info on Xpath queries can be found at http://www.w3schools.com/xpath/default.asp
+        NSString *xPathQueryString = @"//p";   //searching for all h2 in document
+        
+        //Creates an array to hold the data obtained from the Xpath query
+        NSArray *infoNodes = [htmlParser searchWithXPathQuery:xPathQueryString];
+        
+        for(TFHppleElement *element in infoNodes){
+            NSString *info;
+            
+            info = [[element firstChild] content];
+            
+            string = [string stringByAppendingString:info];
+            string = [string stringByAppendingString:@"\r\n\r\n"];
+            
+            NSLog(@"string is: %@", string);
+            
+        }
+        
+        self.textView.text = string;
+        
+        
+    }else{
+        //Display an error if htmlData is not available. I.E no internet connection etc
+        self.textView.text = @"Error - No data";
+    }
+    
+    
+    
+    
 }
-*/
+
 
 @end

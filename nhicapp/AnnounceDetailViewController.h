@@ -10,6 +10,7 @@
 
 @interface AnnounceDetailViewController : UIViewController
 @property (copy, nonatomic) NSString *url;
-@property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UITextView *textView;
+@property (strong, nonatomic) IBOutlet UILabel *labelView;
 
 @end
