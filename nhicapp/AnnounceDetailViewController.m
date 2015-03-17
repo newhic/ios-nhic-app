@@ -11,6 +11,7 @@
 
 @interface AnnounceDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
 @end
 
 @implementation AnnounceDetailViewController
@@ -19,7 +20,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self loadContent];
+    //Display an activity indicator while loading the RSS feed
+    self.indicator.center = self.view.center;
+    [self.view addSubview:self.indicator];
+    [self.indicator startAnimating];
+    [self performSelector:@selector(loadContent)withObject:nil afterDelay:0];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -68,10 +73,11 @@
     self.labelView.numberOfLines = length % 22;
     }
     
-     NSLog(@"num lines is: %d", self.labelView.numberOfLines);
-    
     self.labelView.text = announceTitle;
     self.textView.text = announceBody;
+    
+    [self.indicator stopAnimating];
+    self.indicator.hidesWhenStopped = YES;
     
 }
 
