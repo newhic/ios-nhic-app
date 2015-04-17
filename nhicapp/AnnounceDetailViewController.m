@@ -8,6 +8,7 @@
 
 #import "AnnounceDetailViewController.h"
 #import "TFHpple.h"
+#import "Reachability.h"
 
 @interface AnnounceDetailViewController ()
 
@@ -20,11 +21,17 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+
     //Display an activity indicator while loading the RSS feed
     self.indicator.center = self.view.center;
     [self.view addSubview:self.indicator];
-    [self.indicator startAnimating];
-    [self performSelector:@selector(loadContent)withObject:nil afterDelay:0];
+    
+    if(networkStatus != NotReachable){
+        [self.indicator startAnimating];
+        [self performSelector:@selector(loadContent)withObject:nil afterDelay:0];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
