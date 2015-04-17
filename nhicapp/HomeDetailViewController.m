@@ -8,6 +8,7 @@
 
 #import "HomeDetailViewController.h"
 #import "TFHpple.h"
+#import "Reachability.h"
 
 @interface HomeDetailViewController ()
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *indicator;
@@ -20,11 +21,18 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    
     //Display an activity indicator while loading the RSS feed
     self.indicator.center = self.view.center;
     [self.view addSubview:self.indicator];
-    [self.indicator startAnimating];
-    [self performSelector:@selector(loadContent)withObject:nil afterDelay:0];
+    self.indicator.hidesWhenStopped = YES;
+    
+    if(networkStatus != NotReachable){
+        [self.indicator startAnimating];
+        [self performSelector:@selector(loadContent)withObject:nil afterDelay:0];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -100,7 +108,6 @@
     
     
     [self.indicator stopAnimating];
-    self.indicator.hidesWhenStopped = YES;
 }
 
 

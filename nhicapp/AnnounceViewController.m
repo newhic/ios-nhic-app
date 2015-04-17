@@ -8,6 +8,7 @@
 
 #import "AnnounceViewController.h"
 #import "AnnounceDetailViewController.h"
+#import "Reachability.h"
 
 @interface AnnounceViewController () {
     NSXMLParser *parser;
@@ -42,13 +43,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    
     self.screenName = @"Announcements";
     
     //Display an activity indicator while loading the RSS feed
     self.indicator.center = CGPointMake(self.view.center.x, self.view.center.y-64);
     [self.view addSubview:self.indicator];
-    [self.indicator startAnimating];
-    [self performSelector:@selector(loadAnnounceData)withObject:nil afterDelay:0];
+    
+    if(networkStatus != NotReachable){
+        [self.indicator startAnimating];
+        [self performSelector:@selector(loadAnnounceData)withObject:nil afterDelay:0];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

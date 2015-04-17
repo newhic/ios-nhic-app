@@ -8,6 +8,7 @@
 
 #import "PodcastViewController.h"
 #import "PodcastDetailViewController.h"
+#import "Reachability.h"
 
 @interface PodcastViewController () {
     NSXMLParser *parser;
@@ -71,13 +72,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    
     self.screenName = @"Podcasts";
     
     //Display an activity indicator while loading the RSS feed
     self.indicator.center = CGPointMake(self.view.center.x, self.view.center.y-64);
     [self.view addSubview:self.indicator];
-    [self.indicator startAnimating];
-    [self performSelector:@selector(loadPodcastData)withObject:nil afterDelay:0];
+    
+    if(networkStatus != NotReachable){
+        [self.indicator startAnimating];
+        [self performSelector:@selector(loadPodcastData)withObject:nil afterDelay:0];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
