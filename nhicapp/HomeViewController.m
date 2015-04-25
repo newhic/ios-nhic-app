@@ -24,7 +24,15 @@
     
     self.screenName = @"Home";
     
-    homeAbout = [NSArray arrayWithObjects:@"Our Vision", @"Statement of Faith", @"Core Values", nil];
+    self.title = [NSString stringWithFormat:NSLocalizedString(@"Home", nil), nil];
+
+    
+    homeAbout = [NSArray arrayWithObjects: NSLocalizedString(@"Our Vision", nil),
+                 NSLocalizedString(@"Statement of Faith", nil),
+                 NSLocalizedString(@"Core Values", nil), nil];
+    
+    
+    
     links = [NSArray arrayWithObjects:@"http://www.newhic.org/about/our-vision/",
              @"http://www.newhic.org/about/statement-of-faith/", @"http://www.newhic.org/about/core-values/", nil];
 }

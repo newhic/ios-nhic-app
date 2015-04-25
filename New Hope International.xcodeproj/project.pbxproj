@@ -29,6 +29,7 @@
 		5D6273801AE0D556003EAB0C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D62737F1AE0D556003EAB0C /* Reachability.m */; };
 		5D720D451A9C113300807F53 /* AppNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D720D421A9C113300807F53 /* AppNavController.m */; };
 		5D720D461A9C113300807F53 /* AppTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D720D441A9C113300807F53 /* AppTabBarController.m */; };
+		5D791BBA1AE89CE100A255DC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D791BB91AE89CE100A255DC /* Localizable.strings */; };
 		5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1619E78ACB00129D98 /* HomeViewController.m */; };
 		5DA4FD1A19E78B5D00129D98 /* AnnounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */; };
 		5DA4FD1D19E792C400129D98 /* AnnounceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */; };
@@ -92,6 +93,7 @@
 		5D720D421A9C113300807F53 /* AppNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppNavController.m; sourceTree = "<group>"; };
 		5D720D431A9C113300807F53 /* AppTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTabBarController.h; sourceTree = "<group>"; };
 		5D720D441A9C113300807F53 /* AppTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTabBarController.m; sourceTree = "<group>"; };
+		5D791BB91AE89CE100A255DC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5DA4FD1519E78ACB00129D98 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		5DA4FD1619E78ACB00129D98 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		5DA4FD1819E78B5D00129D98 /* AnnounceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnounceViewController.h; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 		5D1C628919E38A84003A5683 = {
 			isa = PBXGroup;
 			children = (
+				5D791BB91AE89CE100A255DC /* Localizable.strings */,
 				5D052F101AA7F5A9002B031F /* libxml2.dylib */,
 				5D13ED0119F0B79400B8139F /* libz.dylib */,
 				5D13ECFF19F0B78800B8139F /* SystemConfiguration.framework */,
@@ -318,6 +321,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D791BBA1AE89CE100A255DC /* Localizable.strings in Resources */,
 				049430621A60400200BFCC9B /* Settings.bundle in Resources */,
 				5D1C62A119E38A84003A5683 /* Main.storyboard in Resources */,
 				5D1C62A619E38A84003A5683 /* LaunchScreen.xib in Resources */,

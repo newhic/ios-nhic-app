@@ -20,6 +20,9 @@
     self.screenName = @"Videos";
     // Do any additional setup after loading the view.
     
+    self.title = [NSString stringWithFormat:NSLocalizedString(@"Videos", nil), nil];
+
+    
     NSString *fullURL = @"https://www.youtube.com/user/NewHopeIC";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];

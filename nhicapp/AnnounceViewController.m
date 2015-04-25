@@ -48,6 +48,8 @@
     
     self.screenName = @"Announcements";
     
+    self.title = [NSString stringWithFormat:NSLocalizedString(@"Announcements", nil), nil];
+    
     //Display an activity indicator while loading the RSS feed
     self.indicator.center = CGPointMake(self.view.center.x, self.view.center.y-64);
     [self.view addSubview:self.indicator];
