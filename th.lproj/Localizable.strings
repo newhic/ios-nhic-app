@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  New Hope International
+
+  Created by Mark John Merin on 4/22/15.
+  Copyright (c) 2015 Apps4Christ. All rights reserved.
+*/
+
+/* This the Thai localization file */
+
+/* Tab Titles */
+"Home" = "หน้าหลัก";
+"Announcements" = "ข่าวประชาสัมพันธ์";
+"Podcasts" = "พอดคาสต์";
+"Videos" = "วิดีโอ";
+
+/* Home Page Links */
+"Our Vision" = "วิสัยทัศน์ของเรา";
+"Statement of Faith" = "แถลงการณ์ของความเชื่อ";
+"Core Values" = "ค่านิยมหลัก";
+
+/* Settings */
+"Languages" = "ภาษา";
+"Podcast Language" = "ภาษา พอดคาสต์";
+"Other" = "อื่น ๆ";
+"About" = "เกี่ยวกับ";
+"Acknowledgements" = "แสดงความขอบคุณ";
+"Privacy Policy" = "Privacy Policy";
+"Policy" = "นโยบาย";
