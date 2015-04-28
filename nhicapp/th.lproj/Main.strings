@@ -1,0 +1,30 @@
+
+/* Class = "UINavigationItem"; title = "Videos"; ObjectID = "1rX-A3-BMy"; */
+"1rX-A3-BMy.title" = "Videos";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "656-uR-sMa"; */
+"656-uR-sMa.title" = "Home";
+
+/* Class = "UINavigationItem"; title = "Announcements"; ObjectID = "HfE-3Z-4nJ"; */
+"HfE-3Z-4nJ.title" = "Announcements";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "N5b-52-Anm"; */
+"N5b-52-Anm.title" = "Home";
+
+/* Class = "UITabBarItem"; title = "Videos"; ObjectID = "RU0-0L-peQ"; */
+"RU0-0L-peQ.title" = "Videos";
+
+/* Class = "UILabel"; text = "Pastor's Name"; ObjectID = "ScM-8i-IJk"; */
+"ScM-8i-IJk.text" = "Pastor's Name";
+
+/* Class = "UILabel"; text = "Sermon Title"; ObjectID = "Uvk-jt-D9E"; */
+"Uvk-jt-D9E.text" = "Sermon Title";
+
+/* Class = "UINavigationItem"; title = "Podcasts"; ObjectID = "b5B-Rl-WfN"; */
+"b5B-Rl-WfN.title" = "Podcasts";
+
+/* Class = "UITabBarItem"; title = "Podcasts"; ObjectID = "eI9-hy-0Vw"; */
+"eI9-hy-0Vw.title" = "Podcasts";
+
+/* Class = "UITabBarItem"; title = "Announcements"; ObjectID = "zR9-YQ-Bjr"; */
+"zR9-YQ-Bjr.title" = "Announcements";
