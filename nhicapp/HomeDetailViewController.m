@@ -55,11 +55,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+
 -(void)loadContent
 {
     NSString *website;
     NSURL *url;
-    NSString *string = @"";
     
     website = self.url;
     website = [website stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -69,9 +70,20 @@
     
     url = [NSURL URLWithString:website];
     
+    self.titleText.text =[self getTextAt:url forKey: @"//h1"];
+        
+    self.textView.text = [self getTextAt:url forKey: @"//p"];
+    
+    [self.indicator stopAnimating];
+}
+
+-(NSString *)getTextAt:(NSURL*)url forKey:(NSString*)key
+{
     //Returns a data object containing the data from the location specified by a given URL.
     NSData *htmlData = [NSData dataWithContentsOfURL:url];
     
+    NSString *string =@"";
+
     //Gives the Hpple parser the NSData file which contains the HTML data
     TFHpple *htmlParser = [TFHpple hppleWithHTMLData:htmlData];
     
@@ -79,7 +91,7 @@
     {
         //Enter your Xpath query here to obtain the data you want from the webpage
         //more info on Xpath queries can be found at http://www.w3schools.com/xpath/default.asp
-        NSString *xPathQueryString = @"//p";   //searching for all h2 in document
+        NSString *xPathQueryString = key;   //searching for all h2 in document
         
         //Creates an array to hold the data obtained from the Xpath query
         NSArray *infoNodes = [htmlParser searchWithXPathQuery:xPathQueryString];
@@ -95,19 +107,13 @@
             NSLog(@"string is: %@", string);
             
         }
-        
-        self.textView.text = string;
-        
-        
+   
     }else{
         //Display an error if htmlData is not available. I.E no internet connection etc
-        self.textView.text = @"Error - No data";
+       string = @"Error - No data";
     }
     
-    
-    
-    
-    [self.indicator stopAnimating];
+    return string;
 }
 
 

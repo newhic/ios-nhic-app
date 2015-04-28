@@ -573,23 +573,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" showsHorizontalScrollIndicator="NO" indicatorStyle="black" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="x7D-bZ-dq0">
-                                <rect key="frame" x="16" y="64" width="568" height="463"/>
+                                <rect key="frame" x="25" y="133" width="559" height="392"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3K-hA-MqV">
+                                <rect key="frame" x="16" y="75" width="568" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Swh-mN-vyV"/>
+                                </constraints>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="leading" secondItem="tBy-e4-7cR" secondAttribute="leadingMargin" id="Ghq-PP-EOt"/>
-                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="trailing" secondItem="tBy-e4-7cR" secondAttribute="trailingMargin" id="VLE-Xs-0bV"/>
-                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="top" secondItem="fer-ps-qAG" secondAttribute="bottom" id="dhV-ni-abo"/>
-                            <constraint firstItem="ypL-i2-c9j" firstAttribute="top" secondItem="x7D-bZ-dq0" secondAttribute="bottom" constant="24" id="eaD-Fb-9m5"/>
+                            <constraint firstItem="s3K-hA-MqV" firstAttribute="top" secondItem="fer-ps-qAG" secondAttribute="bottom" constant="11" id="3J3-OJ-Jfn"/>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="leading" secondItem="tBy-e4-7cR" secondAttribute="leadingMargin" constant="9" id="DXg-02-NFx"/>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="top" secondItem="s3K-hA-MqV" secondAttribute="bottom" constant="8" symbolic="YES" id="GfH-bc-pdD"/>
+                            <constraint firstItem="s3K-hA-MqV" firstAttribute="leading" secondItem="tBy-e4-7cR" secondAttribute="leadingMargin" id="Mmn-JG-F9i"/>
+                            <constraint firstItem="x7D-bZ-dq0" firstAttribute="trailing" secondItem="tBy-e4-7cR" secondAttribute="trailingMargin" id="n7v-gh-d7q"/>
+                            <constraint firstItem="ypL-i2-c9j" firstAttribute="top" secondItem="x7D-bZ-dq0" secondAttribute="bottom" constant="26" id="r3s-5Y-tOq"/>
+                            <constraint firstItem="s3K-hA-MqV" firstAttribute="trailing" secondItem="x7D-bZ-dq0" secondAttribute="trailing" id="xCC-mV-jr8"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="indicator" destination="jyD-lo-Vsp" id="Anr-RW-rkZ"/>
                         <outlet property="textView" destination="x7D-bZ-dq0" id="pMO-6V-1XW"/>
+                        <outlet property="titleText" destination="s3K-hA-MqV" id="Vz5-P7-8EG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2kK-Vs-cyJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
