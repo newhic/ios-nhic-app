@@ -33,6 +33,7 @@
 		5DA4FD1719E78ACB00129D98 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1619E78ACB00129D98 /* HomeViewController.m */; };
 		5DA4FD1A19E78B5D00129D98 /* AnnounceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */; };
 		5DA4FD1D19E792C400129D98 /* AnnounceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */; };
+		BFF99BAC1B990BB400B7BE5B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF99BAB1B990BB400B7BE5B /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		5DA4FD1919E78B5D00129D98 /* AnnounceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnounceViewController.m; sourceTree = "<group>"; };
 		5DA4FD1B19E792C400129D98 /* AnnounceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnounceDetailViewController.h; sourceTree = "<group>"; };
 		5DA4FD1C19E792C400129D98 /* AnnounceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnounceDetailViewController.m; sourceTree = "<group>"; };
+		BFF99BAB1B990BB400B7BE5B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF99BAC1B990BB400B7BE5B /* AVFoundation.framework in Frameworks */,
 				5D13ED0019F0B78800B8139F /* SystemConfiguration.framework in Frameworks */,
 				5D052F111AA7F5A9002B031F /* libxml2.dylib in Frameworks */,
 				5D13ED0219F0B79400B8139F /* libz.dylib in Frameworks */,
@@ -163,6 +166,7 @@
 		5D1C628919E38A84003A5683 = {
 			isa = PBXGroup;
 			children = (
+				BFF99BAB1B990BB400B7BE5B /* AVFoundation.framework */,
 				5D3FEA7C1AEBE30C0078D1C0 /* Localizable.strings */,
 				5D052F101AA7F5A9002B031F /* libxml2.dylib */,
 				5D13ED0119F0B79400B8139F /* libz.dylib */,
@@ -190,11 +194,11 @@
 				5D13ED0319F0BD5D00B8139F /* GoogleAnalyticsV3 */,
 				5D1C629919E38A84003A5683 /* AppDelegate.h */,
 				5D1C629A19E38A84003A5683 /* AppDelegate.m */,
-				5DA4FD1519E78ACB00129D98 /* HomeViewController.h */,
 				5D720D411A9C113300807F53 /* AppNavController.h */,
 				5D720D421A9C113300807F53 /* AppNavController.m */,
 				5D720D431A9C113300807F53 /* AppTabBarController.h */,
 				5D720D441A9C113300807F53 /* AppTabBarController.m */,
+				5DA4FD1519E78ACB00129D98 /* HomeViewController.h */,
 				5DA4FD1619E78ACB00129D98 /* HomeViewController.m */,
 				5D41883619ECEF1E001BA151 /* HomeDetailViewController.h */,
 				5D41883719ECEF1E001BA151 /* HomeDetailViewController.m */,
