@@ -6,6 +6,7 @@
 //  Copyright (c) 2014 Apps4Christ. All rights reserved.
 //
 
+#import <AVFoundation/AVFoundation.h>
 #import "PodcastDetailViewController.h"
 
 @interface PodcastDetailViewController ()
@@ -16,7 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Start session with playback category to ensure audio plays in the background
+    AVAudioSession *audioSession = [AVAudioSession sharedInstance];
+    BOOL ok;
+    NSError *setCategoryError = nil;
+    ok = [audioSession setCategory:AVAudioSessionCategoryPlayback
+                             error:&setCategoryError];
+    if (!ok) {
+        NSLog(@"%s setCategoryError=%@", __PRETTY_FUNCTION__, setCategoryError);
+    }
     
     NSString *website;
     NSURL *myUrl;
@@ -27,9 +37,11 @@
     
     myUrl = [NSURL URLWithString:website];
     
-    NSURLRequest *request = [NSURLRequest requestWithURL:myUrl];
-    
-    [self.webView loadRequest:request];
+    // Load up the webview
+    self.webView.mediaPlaybackRequiresUserAction = NO;
+    self.webView.allowsInlineMediaPlayback = YES;
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL: [NSURL URLWithString: website]];
+    [self.webView loadRequest: request];
 }
 
 - (void)didReceiveMemoryWarning {

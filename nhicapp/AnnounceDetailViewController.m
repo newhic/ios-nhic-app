@@ -75,7 +75,7 @@
     if(length <= 35)
         self.labelView.numberOfLines = 1;
     else {
-        NSLog(@"length is: %d", length);
+        NSLog(@"length is: %lu", (unsigned long)length);
     
     self.labelView.numberOfLines = length % 22;
     }
