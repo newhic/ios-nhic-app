@@ -23,7 +23,7 @@ Once you have completed making your own feature branch, you are ready to check o
 
 1. Open up Xcode.
 2. Select "check out an existing project".
-3. Enter the following for repository location: https://your-username@bitbucket.org/apps4christ/nhic-ios-app.git.
+3. Enter the following for repository location: https://github.com/newhic/ios-nhic-app.git.
 4. Choose your feature branch when prompted.
 5. Navigate to, or create the directory in which you want to clone the project, and press the Check Out button.
 
